@@ -2,8 +2,8 @@ import React from 'react'
 
 const LogoClients = () => {
   return (
-    <div className='my-8'>
-        <div className='text-center'>
+    <div className='my-10'>
+        <div className='text-center py-4'>
             <h1 className='text-4xl'>Our Partners</h1>
         </div>
         <HorizontalInfiniteScroll direction="left" />
@@ -39,7 +39,7 @@ const HorizontalInfiniteScroll: React.FC<Props> = ({ direction = "left" }) => {
     direction === "left" ? "animate-scroll-left" : "animate-scroll-right";
 
   return (
-    <div className="w-full overflow-hidden bg-white py-6 my-4">
+    <div className="w-full overflow-hidden bg-white py-6 my-6">
       {/* Make container exactly 200% wide for perfect infinite loop */}
       <div className={`flex w-[200%] items-center ${animationClass}`}>
         {[...logos, ...logos].map((logo, index) => (

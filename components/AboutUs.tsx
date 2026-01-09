@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import LogoClients from "./LogoClients";
 
 interface About3Props {
   title?: string;
@@ -34,8 +35,8 @@ interface About3Props {
 
 const defaultCompanies = [
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg",
-    alt: "Arc",
+    src: "",
+    alt: "Shop Image",
   },
   {
     src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg",
@@ -60,31 +61,31 @@ const defaultCompanies = [
 ];
 
 const defaultAchievements = [
-  { label: "Companies ", value: "300+" },
-  { label: "Projects Finalized", value: "800+" },
-  { label: "Happy Customers", value: "99%" },
-  { label: "Recognized Awards", value: "10+" },
+  { label: "Companies ", value: "45+" },
+  { label: "Projects (from last 2-years)", value: "200+" },
+  { label: "Happy Customers", value: "100%" },
+  { label: "Experience", value: "40+ years" },
 ];
 
 const About3 = ({
   title = "About Us",
-  description = "Shadcnblocks is a passionate team dedicated to creating innovative solutions that empower businesses to thrive in the digital age.",
+  description = "We take pride in being pioneers in the signage industry in Hyderabad. With a legacy spanning three generations, we have been at the forefront of delivering innovative signage solutions to our clients.Trust our expertise to elevate your brand's visibility and leave a lasting impression on your audience.",
   mainImage = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    src: "/images/shop-mg/rarts1.jpg",
     alt: "placeholder",
   },
   secondaryImage = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    src: "/images/image.png",
     alt: "placeholder",
   },
   breakout = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+    src: "/images/image.png",
     alt: "logo",
     title: "Hundreds of blocks at Shadcnblocks.com",
     description:
-      "Providing businesses with effective tools to improve workflows, boost efficiency, and encourage growth.",
+      "",
     buttonText: "Discover more",
-    buttonUrl: "https://shadcnblocks.com",
+    buttonUrl: "/contact-us",
   },
   companiesTitle = "Valued by clients worldwide",
   companies = defaultCompanies,
@@ -103,7 +104,7 @@ const About3 = ({
           <img
             src={mainImage.src}
             alt={mainImage.alt}
-            className="size-full max-h-[620px] rounded-xl object-cover lg:col-span-2"
+            className="size-full max-h-[820px] rounded-xl object-cover lg:col-span-2"
           />
           <div className="flex flex-col gap-7 md:flex-row lg:flex-col">
             <div className="flex flex-col justify-between gap-6 rounded-xl bg-muted p-7 md:w-1/2 lg:w-auto">
@@ -130,18 +131,7 @@ const About3 = ({
           </div>
         </div>
         <div className="py-32">
-          <p className="text-center">{companiesTitle} </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-8">
-            {companies.map((company, idx) => (
-              <div className="flex items-center gap-3" key={company.src + idx}>
-                <img
-                  src={company.src}
-                  alt={company.alt}
-                  className="h-6 w-auto md:h-8 dark:invert"
-                />
-              </div>
-            ))}
-          </div>
+          <LogoClients />
         </div>
         <div className="relative overflow-hidden rounded-xl bg-muted p-7 md:p-16">
           <div className="flex flex-col gap-4 text-center md:text-left">

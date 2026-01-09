@@ -12,7 +12,7 @@ import InfiniteScroller from "@/components/Xyz";
 export default function Home() {
   return (
     <div className="px-10 lg:px-32">
-            <ScrollingText/>
+            
 
       <HeroSection />
       

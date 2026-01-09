@@ -17,11 +17,7 @@ import {
 
 const services = [
     { title: "ACP Cladding", href: "/acp-cladding", description: "High-quality ACP cladding for commercial and residential exteriors." },
-    { title: "HPL Cladding", href: "/services/hpl-cladding", description: "Durable and aesthetic HPL cladding panels for modern designs." },
-    { title: "WPC Cladding", href: "/services/wpc-cladding", description: "Weather-resistant WPC cladding suitable for all outdoor applications." },
-    { title: "Aluminium Rafters", href: "/services/aluminium-rafters", description: "Premium aluminium rafters used in ceilings, façades and décor." },
     { title: "Signboards", href: "/sign-boards", description: "LED signs, glow signs, acrylic letters, retro boards and more." },
-    { title: "Glass Work", href: "/glass-work", description: "Glass partitions, facades, railings and custom-designed structural glazing." },
 ]
 
 export function NavigationBar() {
@@ -35,9 +31,9 @@ export function NavigationBar() {
             <div className="container flex items-center justify-between py-3">
 
                 {/* LOGO */}
-                <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-                    <img src="/images/logo.png" alt="Raichuri Arts Logo" className="h-9 w-auto" />
-                    <span className="hidden sm:block">Raichuri Arts</span>
+                <Link href="/" className="flex mx-8 items-center gap-2 font-bold text-xl">
+                    <img src="/images/image.png" alt="Raichuri Arts Logo" className="h-9 w-auto" />
+                    
                 </Link>
 
 
@@ -72,9 +68,9 @@ export function NavigationBar() {
                                 <NavigationMenuContent>
                                     <ul className="grid w-[300px] gap-4 p-4">
                                         <li>
-                                            <LinkBlock title="About Us" href="/about">Learn more about Raichuri Arts.</LinkBlock>
+                                            <LinkBlock title="About Us" href="/about-us">Learn more about Raichuri Arts.</LinkBlock>
                                             <LinkBlock title="Projects" href="/projects">Explore our completed works.</LinkBlock>
-                                            <LinkBlock title="Contact" href="/contact">Get in touch for quotes.</LinkBlock>
+                                            <LinkBlock title="Contact" href="/contact-us">Get in touch for quotes.</LinkBlock>
                                         </li>
                                     </ul>
                                 </NavigationMenuContent>

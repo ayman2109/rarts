@@ -19,7 +19,7 @@ const data = [
         description: "Modern architectural glass work",
     },
     {
-        src: "/images/acp/alu.jpeg",
+        src: "/images/acp/alr.jpeg",
         title: "Aluminium Rafters",
         description: "Durable aluminium rafters for ceilings/walls",
     },

@@ -117,7 +117,7 @@ export function HeroCarousel() {
           }}
           className="
   absolute inset-0 
-  m-auto h-full w-full  aspect-16/9 h-full w-full object-cover object-center
+  m-auto h-full w-full  aspect-16/9  object-cover object-center
  
   z-10 cursor-grab active:cursor-grabbing
 "

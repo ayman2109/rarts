@@ -66,7 +66,7 @@ const Footer2 = ({
     {
       title: "Social",
       links: [
-        { text: "Instagram", url: "https://www.instagram.com/aymanhussain_047/" },
+        { text: "Instagram", url: "https://www.instagram.com/raichuriarts/" },
         { text: "Facebook", url: "https://www.facebook.com/raichuriartsindia/" },
         { text: "WhatsApp", url: "https://wa.me/918309189670" },
       ],
@@ -104,7 +104,7 @@ const Footer2 = ({
                 <ul className="text-gray-400 space-y-4">
                   {section.links.map((link, i) => (
                     <li key={i} className="hover:text-white font-medium">
-                      <a href={link.url}>{link.text}</a>
+                      <a  target="_blank" href={link.url}>{link.text}</a>
                     </li>
                   ))}
                 </ul>
@@ -117,8 +117,8 @@ const Footer2 = ({
             <p>{copyright}</p>
             <ul className="flex gap-4">
               {bottomLinks.map((link, i) => (
-                <li key={i} className="hover:text-white underline">
-                  <a href={link.url}>{link.text}</a>
+                <li key={i}  className="hover:text-white underline">
+                  <a target="_blank" href={link.url}>{link.text}</a>
                 </li>
               ))}
             </ul>

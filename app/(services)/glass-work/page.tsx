@@ -1,52 +1,59 @@
 "use client"
-import { ArrowDown } from 'lucide-react';
 
-import ImageText from '@/components/ImageText'
-const page = () => {
-    return (
-        <div className='py-32 px-20'>
-            <h1>CMR College glass work <ArrowDown /></h1>
-            <div className="w-full mb-20">
-                <img
-                    src="/images/glass/glasswork.jpeg"
-                    className="
-      w-full 
-      rounded-2xl 
-      shadow-xl 
-      object-cover 
-      transition-all 
-      duration-500 
-      ease-out 
-      hover:scale-[1.02] 
-      opacity-0 
-      animate-fadeIn
-    "
-                />
-            </div>
+import { ArrowDown } from "lucide-react"
+import Image from "next/image"
 
-            <div className='top-100 container'>
-                <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
-                    <div
-                        className="border-border flex flex-col overflow-clip rounded-xl border"
-                    >
-                        <img
-                            src="/images/glass/glass_sign.jpeg"
+const Page = () => {
+  return (
+    <div className="mx-auto max-w-7xl px-6 py-24">
+      {/* Heading */}
+      <div className="mb-16 text-center">
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+          CMR College Glass Work
+        </h1>
+        <p className="mt-4 flex items-center justify-center gap-2 text-muted-foreground">
+          Project Showcase <ArrowDown size={18} />
+        </p>
+      </div>
 
-                            className="aspect-16/9 h-full w-full object-cover object-center transition-opacity hover:opacity-80"
-                        />
-
-                        <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12">
-                            <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-2xl lg:mb-6">
-                                LED Letters Hanged on glass wall ( 📍 Preston Prime Mall Gachi Bowli )
-                            </h3>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
+      {/* Hero Image */}
+      <div className="mb-24 flex justify-center">
+        <div className="relative w-full max-w-3xl overflow-hidden rounded-2xl shadow-xl">
+          <Image
+            src="/images/glass/glasswork.jpeg"
+            alt="CMR College Glass Work"
+            width={1200}
+            height={800}
+            className="h-auto w-full object-cover transition-transform duration-500 hover:scale-105"
+            priority
+          />
         </div>
-    )
+      </div>
+
+      {/* Gallery */}
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="group overflow-hidden rounded-xl border bg-white shadow-sm transition hover:shadow-lg">
+          <div className="relative h-56 w-full overflow-hidden">
+            <Image
+              src="/images/glass/glass_sign.jpeg"
+              alt="LED Letters on Glass Wall"
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+
+          <div className="p-6">
+            <h3 className="text-lg font-semibold">
+              LED Letters on Glass Wall
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              📍 Preston Prime Mall, Gachibowli
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
-export default page
+export default Page
