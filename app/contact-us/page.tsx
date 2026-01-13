@@ -111,7 +111,7 @@ const Contact7 = ({
 };
 
 const page = () => {
-    return (<div className='pt-20 mx-15 md:mx-20 sm:mx-10'>
+    return (<div className='pt-20 px-2 md:mx-20 sm:mx-10'>
        
         <Contact7 email="raichuricommericalarts@gmail.com" 
         officeAddress="785/16, H.3-5, G/4, Hyderguda-Basheerbagh Rd, Shergate, Hyderabad, Telangana 500001" phone="+91 83091 89670"/></div>)

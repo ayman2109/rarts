@@ -64,7 +64,7 @@ const defaultAchievements = [
   { label: "Companies ", value: "45+" },
   { label: "Projects (from last 2-years)", value: "200+" },
   { label: "Happy Customers", value: "100%" },
-  { label: "Experience", value: "40+ years" },
+  { label: "Years of Experience", value: "40+" },
 ];
 
 const About3 = ({

@@ -204,7 +204,7 @@ const Page = () => {
                 </div>
 
             </div>
-            <div className="px-20"><Service /></div>
+            <div className="lg:px-20 sm:px-5"><Service /></div>
             <div>
                 <h1>Why Choose Our ACP Cladding Services?</h1>
             </div>

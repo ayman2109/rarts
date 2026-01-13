@@ -41,13 +41,13 @@ const HorizontalInfiniteScroll: React.FC<Props> = ({ direction = "left" }) => {
   return (
     <div className="w-full overflow-hidden bg-white py-6 my-6">
       {/* Make container exactly 200% wide for perfect infinite loop */}
-      <div className={`flex w-[200%] items-center ${animationClass}`}>
+      <div className={`flex min-w-max items-center ${animationClass}`}>
         {[...logos, ...logos].map((logo, index) => (
           <div key={index} className="mx-8 flex items-center justify-center">
             <img
               src={logo.src}
               alt={logo.alt}
-              className="h-30 w-auto object-contain"
+              className="h-20 sm:h-24 md:h-28 lg:h-30 w-auto object-contain"
             />
           </div>
         ))}
@@ -75,3 +75,5 @@ const HorizontalInfiniteScroll: React.FC<Props> = ({ direction = "left" }) => {
     </div>
   );
 };
+
+

@@ -14,6 +14,7 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import { useEffect } from "react"
 
 const services = [
     { title: "ACP Cladding", href: "/acp-cladding", description: "High-quality ACP cladding for commercial and residential exteriors." },
@@ -23,6 +24,7 @@ const services = [
 export function NavigationBar() {
     const isMobile = useIsMobile()
     const [open, setOpen] = React.useState(false)
+
 
     return (
         <div className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl">
@@ -137,7 +139,7 @@ export function NavigationBar() {
                             <div className="font-semibold text-lg mb-1">Services</div>
                             <div className="flex flex-col gap-2">
                                 {services.map((s) => (
-                                    <Link key={s.title} href={s.href} className="text-sm text-muted-foreground">
+                                    <Link key={s.title} onClick={() => setOpen(false)} href={s.href} className="text-sm text-muted-foreground">
                                         {s.title}
                                     </Link>
                                 ))}
@@ -147,9 +149,9 @@ export function NavigationBar() {
                         <div>
                             <div className="font-semibold text-lg mb-1">Company</div>
                             <div className="flex flex-col gap-2">
-                                <Link href="/about-us">About Us</Link>
-                                <Link href="/projects">Projects</Link>
-                                <Link href="/contact">Contact</Link>
+                                <Link onClick={() => setOpen(false)} href="/about-us">About Us</Link>
+                                <Link onClick={() => setOpen(false)} href="/projects">Projects</Link>
+                                <Link onClick={() => setOpen(false)} href="/contact-us">Contact</Link>
                             </div>
                         </div>
 

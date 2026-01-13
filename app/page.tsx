@@ -11,7 +11,7 @@ import LogoClients from "@/components/LogoClients";
 import InfiniteScroller from "@/components/Xyz";
 export default function Home() {
   return (
-    <div className="px-10 lg:px-32">
+    <div className="px-5 lg:px-32">
             
 
       <HeroSection />
