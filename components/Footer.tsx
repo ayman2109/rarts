@@ -37,15 +37,15 @@ const Footer2 = ({
         { text: "ACP Cladding", url: "/acp-cladding" },
         { text: "Sign Boards", url: "/sign-boards" },
         { text: "Glass Work", url: "/glass-work" },
-        { text: "Interior Branding", url: "/interior-branding" },
+        { text: "Liquid Letters", url: "/liquid-letters" },
       ],
     },
     {
       title: "Company",
       links: [
         { text: "About Us", url: "/about" },
-        { text: "Portfolio", url: "/portfolio" },
-        { text: "Contact", url: "/contact" },
+        { text: "Projects", url: "/projects" },
+        { text: "Contact", url: "/contact-us" },
       ],
     },
     {

@@ -71,22 +71,17 @@ export function NavigationBar() {
                                     <ul className="grid w-[300px] gap-4 p-4">
                                         <li>
                                             <LinkBlock title="About Us" href="/about-us">Learn more about Raichuri Arts.</LinkBlock>
-                                            <LinkBlock title="Projects" href="/projects">Explore our completed works.</LinkBlock>
+                                            <LinkBlock title="Projects Gallery" href="/projects">Explore our completed works.</LinkBlock>
                                             <LinkBlock title="Contact" href="/contact-us">Get in touch for quotes.</LinkBlock>
                                         </li>
                                     </ul>
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
 
-                            <NavigationMenuItem className="hidden md:block">
-                                <NavigationMenuTrigger className="font-semibold text-base">Quick Links</NavigationMenuTrigger>
-                                <NavigationMenuContent>
-                                    <ul className="grid w-[200px] gap-2 p-4">
-                                        <LinkIcon href="/get-quote" icon={<CircleHelpIcon />}>Get a Quote</LinkIcon>
-                                        <LinkIcon href="/gallery" icon={<CircleIcon />}>Gallery</LinkIcon>
-                                        <LinkIcon href="/testimonials" icon={<CircleCheckIcon />}>Testimonials</LinkIcon>
-                                    </ul>
-                                </NavigationMenuContent>
+                            <NavigationMenuItem>
+                                <NavigationMenuLink asChild className={`${navigationMenuTriggerStyle()} font-semibold text-base`}>
+                                    <Link href="/projects">Gallery</Link>
+                                </NavigationMenuLink>
                             </NavigationMenuItem>
 
 
